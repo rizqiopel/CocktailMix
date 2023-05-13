@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookElement = document.createElement("div");
     bookElement.classList.add("book-item");
     bookElement.innerHTML = `
-        <h4>${book.title}</h4>
-        <p>${book.author}</p>
-        <p>Tahun Terbit: ${book.year}</p>
-        <button class="delete-button" data-id="${book.id}">Hapus</button>
-      `;
+      <h4>Judul Buku: ${book.title}</h4>
+      <p>Penulis: ${book.author}</p>
+      <p>Tahun Terbit: ${book.year}</p>
+      <button class="delete-button" data-id="${book.id}">Hapus</button>
+    `;
 
     const deleteButton = bookElement.querySelector(".delete-button");
     deleteButton.addEventListener("click", function () {

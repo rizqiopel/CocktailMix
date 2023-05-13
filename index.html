@@ -14,14 +14,8 @@
   <body>
     <header>
       <h1>Bookshelf App</h1>
+      <p>Simpan dan kelola koleksi buku Anda dengan mudah.</p>
     </header>
-
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Selamat Datang di Bookshelf App</h2>
-        <p>Simpan dan kelola koleksi buku Anda dengan mudah.</p>
-      </div>
-    </section>
 
     <section class="add-book">
       <h2>Tambah Buku</h2>
@@ -61,32 +55,32 @@
       </form>
     </section>
 
+    <div class="search-box">
+      <input
+        id="searchbook"
+        class="search-txt"
+        type="text"
+        name=""
+        placeholder="Cari Buku..."
+      />
+      <a href="#" class="search-btn">
+        <i data-feather="search"></i>
+      </a>
+    </div>
+
     <section class="bookshelf">
       <h2>Tampilan Rak Buku</h2>
 
-      <div class="search-box">
-        <input
-          id="searchbook"
-          class="search-txt"
-          type="text"
-          name=""
-          placeholder="Cari Buku..."
-        />
-        <a href="#" class="search-btn">
-          <i class="fas fa-search"></i>
-        </a>
-      </div>
-
       <div class="bookshelf-section">
-        <h3>Sudah Dibaca</h3>
-        <div id="read-books">
+        <h3>Belum Dibaca</h3>
+        <div id="unread-books">
           <!-- Buku-buku yang sudah dibaca akan ditambahkan dinamis melalui JavaScript -->
         </div>
       </div>
 
       <div class="bookshelf-section">
-        <h3>Belum Dibaca</h3>
-        <div id="unread-books">
+        <h3>Sudah Dibaca</h3>
+        <div id="read-books">
           <!-- Buku-buku yang belum dibaca akan ditambahkan dinamis melalui JavaScript -->
         </div>
       </div>

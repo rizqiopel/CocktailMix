@@ -1,43 +1,29 @@
 /* Gaya untuk seluruh halaman */
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+  background-color: #e3fdfd;
 }
 
 /* Gaya untuk header */
 header {
-  background-color: #333;
+  background-color: #19a7ce;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-/* Gaya untuk hero section */
-.hero {
-  background-color: #fff;
-  padding: 40px;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 /* Gaya untuk form tambah buku */
 .add-book {
-  background-color: #f5f5f5;
+  color: #19a7ce;
   padding: 20px;
+  text-align: center;
 }
 
 .add-book form {
@@ -64,35 +50,45 @@ header {
 
 .add-book form button {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #19a7ce;
   color: #fff;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 /* Gaya untuk tampilan rak buku */
 .bookshelf {
-  background-color: #f5f5f5;
-  padding: 20px;
+  color: #19a7ce;
+  text-align: center; /* Mengatur h2 berada di tengah */
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bookshelf h2 {
+  width: 100%;
 }
 
 .bookshelf-section {
-  margin-bottom: 20px;
+  width: 50%; /* Mengatur lebar untuk setiap bagian */
+  padding: 5px;
 }
 
-.bookshelf-section h3 {
-  margin: 0;
+/* Mengatur daftar buku yang belum dibaca (unread-books) */
+#unread-books {
+  border-radius: 10px;
+  border: 1px solid #19a7ce; /* Mengatur border dengan warna dan ketebalan yang diinginkan */
+  padding: 10px; /* Menambahkan padding di sekitar konten */
+  background-color: #cbf1f5; /* Mengatur warna latar belakang */
 }
 
-.bookshelf-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.bookshelf-section li {
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Mengatur daftar buku yang sudah dibaca (read-books) */
+#read-books {
+  border-radius: 10px;
+  border: 1px solid #19a7ce; /* Mengatur border dengan warna dan ketebalan yang diinginkan */
+  padding: 10px; /* Menambahkan padding di sekitar konten */
+  background-color: #cbf1f5; /* Mengatur warna latar belakang */
 }
 
 .search-bar {
@@ -102,15 +98,14 @@ header {
 #search-input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #19a7ce;
   border-radius: 5px;
 }
 
 .search-box {
   position: absolute;
-  top: 0;
   right: 0;
-  background: #15172b;
+  background: #cbf1f5;
   padding: 10px;
   border-radius: 40px;
 }
@@ -121,7 +116,7 @@ header {
 }
 
 .search-box:hover .search-btn {
-  background: #65657b;
+  background: #19a7ce;
   color: white;
 }
 
@@ -130,7 +125,7 @@ header {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #15172b;
+  background: #19a7ce;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +152,10 @@ header {
 
 /* Gaya untuk footer */
 footer {
-  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #19a7ce;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -186,11 +184,7 @@ footer {
 }
 
 /* Gaya responsif untuk ukuran layar kecil */
-@media (max-width: 600px) {
-  .hero-content {
-    padding: 20px;
-  }
-
+@media (max-width: 600px), (max-width: 768px) {
   .add-book form {
     max-width: 100%;
   }
