@@ -1,2 +1,2 @@
-# BookshelfApp
-Submission Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage
+# CocktailMix
+Membuat Aplikasi Web dengan ES6, Custom Element, NPM, Module Bundler, dan AJAX
