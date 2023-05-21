@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CocktailMix - Aplikasi Pembuat Koktail</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #f78536"
+      >
+        <h1 class="text-white navbar-brand mx-auto">Coktail Mix</h1>
+      </nav>
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1597290282695-edc43d0e7129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80');
+          background-size: cover;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Welcome to CocktailMix</h1>
+              <h4 class="mb-3">Find Your Perfect Cocktail</h4>
+              <button id="openModalButton">Popular Drinks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <search-bar></search-bar>
+      <modal-element></modal-element>
+      <cocktail-list></cocktail-list>
+    </main>
+    <footer class="text-center text-white" style="background-color: #f78536">
+      <div class="container pt-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="light"
+            ><i class="bi bi-github"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center text-light p-3" style="background-color: #f78536">
+        © 2023 Copyright:
+        <a class="text-light" href="">Ahmad Syarifuddin Rizqi</a>
+      </div>
+    </footer>
+  </body>
+</html>
